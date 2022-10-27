@@ -1,0 +1,178 @@
+  /* ---- Google Fonts  ---- */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+    font-family: 'Space Grotesk',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(22.5deg, rgba(66, 66, 66, 0.02) 0%, rgba(66, 66, 66, 0.02) 11%,rgba(135, 135, 135, 0.02) 11%, rgba(135, 135, 135, 0.02) 24%,rgba(29, 29, 29, 0.02) 24%, rgba(29, 29, 29, 0.02) 38%,rgba(15, 15, 15, 0.02) 38%, rgba(15, 15, 15, 0.02) 50%,rgba(180, 180, 180, 0.02) 50%, rgba(180, 180, 180, 0.02) 77%,rgba(205, 205, 205, 0.02) 77%, rgba(205, 205, 205, 0.02) 100%),linear-gradient(67.5deg, rgba(10, 10, 10, 0.02) 0%, rgba(10, 10, 10, 0.02) 22%,rgba(52, 52, 52, 0.02) 22%, rgba(52, 52, 52, 0.02) 29%,rgba(203, 203, 203, 0.02) 29%, rgba(203, 203, 203, 0.02) 30%,rgba(69, 69, 69, 0.02) 30%, rgba(69, 69, 69, 0.02) 75%,rgba(231, 231, 231, 0.02) 75%, rgba(231, 231, 231, 0.02) 95%,rgba(138, 138, 138, 0.02) 95%, rgba(138, 138, 138, 0.02) 100%),linear-gradient(112.5deg, rgba(221, 221, 221, 0.02) 0%, rgba(221, 221, 221, 0.02) 17%,rgba(190, 190, 190, 0.02) 17%, rgba(190, 190, 190, 0.02) 39%,rgba(186, 186, 186, 0.02) 39%, rgba(186, 186, 186, 0.02) 66%,rgba(191, 191, 191, 0.02) 66%, rgba(191, 191, 191, 0.02) 68%,rgba(16, 16, 16, 0.02) 68%, rgba(16, 16, 16, 0.02) 70%,rgba(94, 94, 94, 0.02) 70%, rgba(94, 94, 94, 0.02) 100%),linear-gradient(90deg, #ffffff,#ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    animation: animate 3s linear ;
+}
+
+.heading{
+    display: flex;
+    color: #222;
+    
+}
+
+.heading h1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    font-size: 50px;
+    text-align: center;
+}
+
+h1{
+    word-break: break-all;
+}
+
+
+.social_links{
+    margin-bottom: 10em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.social_links ul{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_links li{
+    color: #333;
+}
+
+.social_links a{
+
+    color: rgb(84, 74, 74);
+    text-decoration: none;
+    align-items: center;
+}
+
+.social_links img{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+
+}
+
+.webcounter{
+    
+    margin-bottom: 5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@keyframes animate{
+    0%{
+      transform: scale(0);
+      opacity: 1;
+      bottom: 0;
+    }
+    50%{
+      transform: scale(1);
+      opacity: 1;
+      
+    }
+  }
+
+
+
+  @media only screen and (max-width: 769px){
+    .heading{
+        display: flex;
+        margin-top: 8em;
+        flex-direction: column;    
+    }
+
+    .social_links{
+        padding: 30px;
+    }
+}
+  @media only screen and (max-width: 269px){
+    .heading{
+        margin-top: 2em;
+        
+        flex-direction: column;    
+    }
+    .heading h1{
+        font-size: 22px;
+    }
+
+    .social_links{
+        padding: 1em;
+        
+    }
+    .social_links ul,
+    .social_links li,
+    .social_links img {
+        word-break: break-all;
+        min-width: 1em;
+        font-size: 11px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .social_links img {
+        width: 23px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .webcounter{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 80%;
+        margin-top: -10em;
+    }
+}
+
+
+@media only screen and (max-width: 769px){
+    .heading{
+        display: flex;
+        margin-top: 8em;
+        font-size: 2em;
+        flex-direction: column;    
+    }
+
+    .social_links{
+        font-size: small;
+        padding: 30px;
+    }
+    .social_links img{
+        min-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .webcounter{
+        
+        margin-bottom: 20em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

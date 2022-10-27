@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    background-image: linear-gradient(22.5deg, rgba(66, 66, 66, 0.02) 0%, rgba(66, 66, 66, 0.02) 11%,rgba(135, 135, 135, 0.02) 11%, rgba(135, 135, 135, 0.02) 24%,rgba(29, 29, 29, 0.02) 24%, rgba(29, 29, 29, 0.02) 38%,rgba(15, 15, 15, 0.02) 38%, rgba(15, 15, 15, 0.02) 50%,rgba(180, 180, 180, 0.02) 50%, rgba(180, 180, 180, 0.02) 77%,rgba(205, 205, 205, 0.02) 77%, rgba(205, 205, 205, 0.02) 100%),linear-gradient(67.5deg, rgba(10, 10, 10, 0.02) 0%, rgba(10, 10, 10, 0.02) 22%,rgba(52, 52, 52, 0.02) 22%, rgba(52, 52, 52, 0.02) 29%,rgba(203, 203, 203, 0.02) 29%, rgba(203, 203, 203, 0.02) 30%,rgba(69, 69, 69, 0.02) 30%, rgba(69, 69, 69, 0.02) 75%,rgba(231, 231, 231, 0.02) 75%, rgba(231, 231, 231, 0.02) 95%,rgba(138, 138, 138, 0.02) 95%, rgba(138, 138, 138, 0.02) 100%),linear-gradient(112.5deg, rgba(221, 221, 221, 0.02) 0%, rgba(221, 221, 221, 0.02) 17%,rgba(190, 190, 190, 0.02) 17%, rgba(190, 190, 190, 0.02) 39%,rgba(186, 186, 186, 0.02) 39%, rgba(186, 186, 186, 0.02) 66%,rgba(191, 191, 191, 0.02) 66%, rgba(191, 191, 191, 0.02) 68%,rgba(16, 16, 16, 0.02) 68%, rgba(16, 16, 16, 0.02) 70%,rgba(94, 94, 94, 0.02) 70%, rgba(94, 94, 94, 0.02) 100%),linear-gradient(90deg, #ffffff,#ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 6em;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.heading{
+    
+    width: 50%;
+    padding-bottom: 50px;
+}
+.heading h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.sec{
+   
+    justify-content: center;
+    display: grid;
+    flex-direction: column;
+}
+
+.card{
+    
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+   
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    line-height: 3vh;
+}
+
+span{
+    margin-bottom: 1em;
+}
+.box ul{
+    color: white;
+    background: url(../src/img/animated/animated_banner.gif);
+    background-size: cover;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;  
+}
+
+.box li{
+    background: rgba(58, 56, 58, 0.502);
+    background-size: cover;
+    list-style: none;
+    font-size: 18px;
+}
+
+
+.box:hover{
+    
+    background: rgba(74, 60, 60, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(74, 60, 60, 0.34);
+    transition: 0.2s all ease-in;
+}
+
+
+table{
+    background-color: rgba(10, 10, 10, 0.078);
+}
+
+
+button{
+    background-color: rgba(16, 16, 16, 0.02);
+}
+
+button a{
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+
+
+.btt__text{
+    position: fixed;
+    color: rgb(103, 165, 147);
+    bottom: 3em;
+    right: 30px;
+
+}
+.btt__arrow
+{
+    position: fixed;
+    color: #eee;
+    bottom: 4px;
+    right: 50px;
+}
+
+.btt__arrow img{
+    width: 2em;
+}
+
+
+@media only screen and (max-width: 769px){
+    .container{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .heading{
+        
+        object-fit: cover;
+        background-size: contain;
+        width: 100%;
+    }
+
+    .card{
+        
+    }
+    .box{
+       
+    }
+}
+@media only screen and (max-width: 269px){
+    .container{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .heading{
+        font-size: 10px;
+        object-fit: cover;
+        background-size: contain;
+        width: 100%;
+        word-break: break-all;
+    }
+
+    .card{
+        
+    }
+    .box{
+       
+        justify-content: center;
+        align-items: center;
+       
+       word-break: break-all;
+    }
+}
