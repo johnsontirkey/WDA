@@ -578,6 +578,13 @@ hr#thread{
   transition: 1s all ease-in-out;
 }
 
+.btt__text{
+    position: fixed;
+    color: rgb(0, 0, 0);
+    bottom: 1.2em;
+    right: 15px;
+
+}
 .btt__arrow
 {
     position: fixed;
