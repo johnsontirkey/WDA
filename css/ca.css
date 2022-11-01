@@ -252,6 +252,11 @@ body{
   
 }
 
+.card_1 h1{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
 .card_1 .table_container{
   
   padding: 40px;
@@ -276,7 +281,10 @@ table tr,td{
   
 }
 
-
+.card_2 h1{
+  text-transform: uppercase;
+  font-size: 20px;
+}
 .card2_box{
  
   padding: 40px;
