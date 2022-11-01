@@ -577,3 +577,15 @@ hr#thread{
   background: rgb(22, 54, 54);
   transition: 1s all ease-in-out;
 }
+
+.btt__arrow
+{
+    position: fixed;
+    color: #eee;
+    bottom: 8px;
+    right: 35px;
+}
+
+.btt__arrow img{
+    width: 2em;
+}
